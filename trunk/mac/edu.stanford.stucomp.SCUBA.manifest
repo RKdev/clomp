@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pfm_description</key>
+	<string></string>
+	<key>pfm_domain</key>
+	<string>edu.stanford.stucomp.SCUBA</string>
+	<key>pfm_name</key>
+	<string>SCUBA</string>
+	<key>pfm_version</key>
+	<real>1</real>
+	<key>pfm_format_version</key>
+	<integer>1</integer>
+	<key>pfm_title</key>
+	<string>SCUBA</string>
+	<key>pfm_subkeys</key>
+	<array>
+		<dict>
+			<key>pfm_name</key>
+			<string>justTesting</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_title</key>
+			<string>Testing Mode</string>
+			<key>pfm_description</key>
+			<string>Turn on this option to always show the window, and to disable restartng.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>serverAddress</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>http://sample.com/SCUBA.html</string>
+			<key>pfm_title</key>
+			<string>Seconds Between Checks</string>
+			<key>pfm_description</key>
+			<string>The web site that is checked for instructions. This should be the complete URL.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>ignoreServer</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_title</key>
+			<string>Ignore the Server</string>
+			<key>pfm_description</key>
+			<string>If this option is turned on the server will be ignored.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>secondsBetweenChecks</string>
+			<key>pfm_type</key>
+			<string>integer</string>
+			<key>pfm_default</key>
+			<integer>300</integer>
+			<key>pfm_title</key>
+			<string>Seconds Between Checks</string>
+			<key>pfm_description</key>
+			<string>The number of seconds between checking in with the server.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>logHearbeat</string>
+			<key>pfm_type</key>
+			<string>boolean</string>
+			<key>pfm_default</key>
+			<false/>
+			<key>pfm_title</key>
+			<string>Log a Hearbeat</string>
+			<key>pfm_description</key>
+			<string>When turned on this will log a message to the console every time the server is checked.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>windowsTargetVolume</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>/dev/disk0s3</string>
+			<key>pfm_title</key>
+			<string>Window Volume Location</string>
+			<key>pfm_description</key>
+			<string>The location of the Windows volume. This should be in a format that the command line version of diskutil will understand.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>imageNameOrLocation</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>WindowsLogoBoot</string>
+			<key>pfm_title</key>
+			<string>Image Name or Location</string>
+			<key>pfm_description</key>
+			<string>Either the image name (minus the file extension), or an absolute path to the desired image. If this is not set, then the defualt image is used.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>topMessage</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>Reboot into Windows XP</string>
+			<key>pfm_title</key>
+			<string>Top Message</string>
+			<key>pfm_description</key>
+			<string>The message that is displayed at the top of the window. By default this is &quot;Reboot into Windows XP&quot;</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>bottomMessage</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>Click on the Windows logo to reboot into Windows XP</string>
+			<key>pfm_title</key>
+			<string>Image Name or Location</string>
+			<key>pfm_description</key>
+			<string>The explanitory message at the bottom of the window.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>popupTitle</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>Reboot into MS Windows XP?</string>
+			<key>pfm_title</key>
+			<string>Popup Title</string>
+			<key>pfm_description</key>
+			<string>The title on the confirmation sheet.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>popupMessage</string>
+			<key>pfm_type</key>
+			<string>string</string>
+			<key>pfm_default</key>
+			<string>This computer will reboot into Microsoft Windows in %i seconds.</string>
+			<key>pfm_title</key>
+			<string>Popup Message</string>
+			<key>pfm_description</key>
+			<string>The message in the confirmation sheet. Note that the &apos;%i&apos; will be replaced by the number of seconds set.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>popupSeconds</string>
+			<key>pfm_type</key>
+			<string>integer</string>
+			<key>pfm_default</key>
+			<integer>10</integer>
+			<key>pfm_title</key>
+			<string>Auto Confirm Seconds</string>
+			<key>pfm_description</key>
+			<string>The number of seconds the confirmation sheet waits before auto-confirming.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>loginwindowTextLines</string>
+			<key>pfm_type</key>
+			<string>integer</string>
+			<key>pfm_default</key>
+			<integer>1</integer>
+			<key>pfm_title</key>
+			<string>Login Window Text Lines</string>
+			<key>pfm_description</key>
+			<string>The number of lines of text shown as "LoginwindowText". At some point in the future this might be automatic.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+		<dict>
+			<key>pfm_name</key>
+			<string>loginwindowUsersDisplayed</string>
+			<key>pfm_type</key>
+			<string>integer</string>
+			<key>pfm_default</key>
+			<integer>1</integer>
+			<key>pfm_title</key>
+			<string>Users Displayed at LoginWindow</string>
+			<key>pfm_description</key>
+			<string>The number of users displayed at the loginwindow. At some point in the future this might be automatic.</string>
+			<key>pfm_targets</key>
+			<array>
+				<string>system-managed</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
